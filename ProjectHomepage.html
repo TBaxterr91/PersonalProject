@@ -6,7 +6,7 @@
 
  
 
-<audio id="audio" src="rexroar.wav" ></audio>
+<audio id="rexroar" src="rexroar.wav" ></audio>
 
 
 
@@ -43,7 +43,7 @@
 </div></center>
 
 
-<input type="button" onclick="addnewdino();play()" value="Add New Dino" style="position:absolute;top:100px;left:50px">
+<input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" style="position:absolute;top:100px;left:50px">
 <input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:125px;left:50px">
 <input type="button" onclick="updatedino()" value="Update Dino" style="position:absolute;top:150px;left:50px">
 <input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px">
@@ -86,9 +86,9 @@
  <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Species" id="u4"><br><br>
  Strength:
  <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Dino Strength" id="u5"><br><br>
-<input type="button" onclick="updatedino2()" value="Update Dino" style="position:absolute;top:260px;left:100px">
+ <input type="button" onclick="updatedino2()" value="Update Dino" style="position:absolute;top:260px;left:100px">
 
-</form>
+ </form>
 
 <form id="deletedinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
 
@@ -97,25 +97,20 @@
  Nickname:
  <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="d1"><br><br>
 
- <!-- <button onclick="deletedino2()" style="position:absolute;top:125px;left:100px" class="button deletedino">Delete Dino </button> -->
  <input type="button" onclick="deletedino2()" value="Delete Dino" style="position:absolute;top:125px;left:100px">
 </form>
 
 <form id="soundsMenu" style="visibility:hidden;">
 
  <U><b><center>Check Your Dino Sounds!</center></b></U><br><br>
-  Nickname:
- <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="a1"><br><br>
-
-
  T-Rex:
- <input type="button" onclick="play()"  value="T-Rex Roar" style="position:absolute;top:260px;left:100px">
+ <input type="button" onclick="play()"  value="T-Rex Roar" style="position:absolute;top:150px;left:100px"> <br><br>
  Trike:
-  <input type="button" onclick="play()"  value="Trike Roar" style="position:absolute;top:260px;left:100px">
+ <input type="button" onclick="play()"  value="Trike Roar" style="position:absolute;top:175px;left:100px"> <br><br>
  Raptor:
-  <input type="button" onclick="play()" value="Raptor Roar" style="position:absolute;top:260px;left:100px">
+ <input type="button" onclick="play()" value="Raptor Roar" style="position:absolute;top:200px;left:100px"> <br><br>
  Dragon
- <input type="button" onclick="play()"  value="Dragon Roar" style="position:absolute;top:260px;left:100px">
+ <input type="button" onclick="play()"  value="Dragon Roar" style="position:absolute;top:225px;left:100px"> <br><br>
  </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

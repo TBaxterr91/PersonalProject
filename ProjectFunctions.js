@@ -9,6 +9,8 @@ function addnewdino(){
 	Refdelete.style.visibility="hidden";
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
+     var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
 	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -21,6 +23,8 @@ function updatedino(){
 	Refdelete.style.visibility="hidden";
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
+     var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
 	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -33,6 +37,8 @@ function deletedino(){
 	Refdelete.style.visibility="visible";
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
+    var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
 	Refdelete.style="width:275px;height:100px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -45,9 +51,9 @@ function soundss(){
 	Refdelete.style.visibility="hidden";
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
-    var MenuUpdate= document.getElementById("soundsMenu");
-    MenuUpdate.style.visibility="visible";
-	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+    var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="visible";
+	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
 
@@ -60,6 +66,8 @@ function closeMenu(){
     MenuDel.style.visibility="hidden";
     var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
+     var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
 }
 
 function exitMenu(){
@@ -71,6 +79,8 @@ function exitMenu(){
     MenuDel.style.visibility="hidden";
     var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
+     var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
     location.reload(true);
 }
 
@@ -199,7 +209,7 @@ Http.onreadystatechange = function(e){
        button.type="button";
        button.className = "btn tableDel"
        button.addEventListener("click", function() {
-           deleteData(item.nickname);
+           deleteData(item.id);
        });
        buttonCell.appendChild(button);
 		var dinoTable = document.getElementById("dinoTable");
@@ -250,25 +260,26 @@ function addnewdino2() {
 		},
 		dataType : 'json'
 	});
-	   play();
+	   playrexroar();
 	   location.reload(true);
 
 }
 
    
-  function play(){
-       var audio = document.getElementById("audio");
+  function playrexroar(){
+       var audio = document.getElementById("rexroar");
        audio.play();
                  }
 
 
 
-	function deleteData(nickname){
+	function deleteData(id){
     var Http= new XMLHttpRequest();
-        Http.open("DELETE", 'http://localhost:9100/deleteDino/' + nickname);
+        Http.open("DELETE", 'http://localhost:9100/deleteDino/' + id);
         Http.setRequestHeader("Content-Type", "application/json");
         Http.onload= function(){
             getexistingdinos();
+            location.reload(true);
         }
         
         Http.send();
@@ -276,31 +287,34 @@ function addnewdino2() {
         return false;
 }
 
-// function updatedino2() {
-// 	var nickname = document.getElementById('a1').value;
-// 	var diet = document.getElementById('a2').value;
-// 	var lifespan = document.getElementById('a3').value;
-// 	var species = document.getElementById('a4').value;
-// 	var strength = document.getElementById('a5').value;
-// 	var dinosaur = new Object();
-// 	dinosaur.nickname = nickname;
-// 	dinosaur.diet = diet;
-// 	dinosaur.lifespan = lifespan;
-// 	dinosaur.species = species;
-// 	dinosaur.strength = strength;
-// 	var dinosaurJSON = JSON.stringify(dinosaur);
-// 	$.ajax({
-// 		type : "POST",
-// 		url : "http://localhost:9100/newDinosaur",
-// 		contentType : "application/json",
-// 		data : dinosaurJSON,
-// 		success : function(dinosaur) {
-// 			console.log(data);
-// 		},
-// 		error : function(dinosaur) {
-// 			console.log(data);
-// 		},
-// 		dataType : 'json'
-// 	});
-// 	   location.reload(true);
-// }
+function updatedino2() {
+	var nickname = document.getElementById('u1').value;
+	var diet = document.getElementById('u2').value;
+	var lifespan = document.getElementById('u3').value;
+	var species = document.getElementById('u4').value;
+	var strength = document.getElementById('u5').value;
+	var dinosaur = new Object();
+	dinosaur.nickname = nickname;
+	dinosaur.diet = diet;
+	dinosaur.lifespan = lifespan;
+	dinosaur.species = species;
+	dinosaur.strength = strength;
+	var dinosaurJSON = JSON.stringify(dinosaur);
+	$.ajax({
+		type : "PUT",
+		url : "http://localhost:9100/updateDinosaur",
+		contentType : "application/json",
+		data : dinosaurJSON,
+		success : function(dinosaur) {
+			console.log(data);
+		},
+		error : function(dinosaur) {
+			console.log(data);
+		},
+		dataType : 'json'
+	});
+	   playrexroar();
+	   location.reload(true);
+
+}
+
