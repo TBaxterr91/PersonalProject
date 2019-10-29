@@ -1,0 +1,129 @@
+<header> <center>
+    <Style= font-size:30>
+        <font size="30"><font color="crimson"><B><u>Ark Dino Tracker</u></B></font> </font>
+        </style>
+    </center> </header>
+
+ 
+
+<audio id="audio" src="rexroar.wav" ></audio>
+
+
+
+
+<html>
+
+<style>
+    body{
+    background-image: url("ark1.jpg");
+ 	background-repeat: no-repeat;
+ 	background-size: 100%
+}
+</style>
+
+<center><div id="existingdinoMenu" class="container" style="visibility:hidden; background-color:olivedrab">
+  <h2>Existing Dinosaurs</h2>            
+  <table class="table" id="dinoTable">
+    <head>
+      <tr>
+        <th>Nickname</th>
+        <th>Diet</th>
+        <th>Lifespan</th>
+        <th>Species</th>
+        <th>Strength</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+   
+   
+
+    </tbody>
+  </table>
+</div></center>
+
+
+<input type="button" onclick="addnewdino();play()" value="Add New Dino" style="position:absolute;top:100px;left:50px">
+<input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:125px;left:50px">
+<input type="button" onclick="updatedino()" value="Update Dino" style="position:absolute;top:150px;left:50px">
+<input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px">
+<input type="button" onclick="exitMenu()" value="Exit Menu" style="position:absolute;top:215px;left:50px">
+<input type="button" onclick="soundss()" value="Sound Menu" style="position:absolute;top:240px;left:50px">
+
+
+<audio id="audio" src="rexroar.wav" ></audio>
+
+
+
+<form id="addnewdinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+
+ <U><b><center>Add New Dino Infomation</center></b></U><br><br>
+  Nickname:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="a1"><br><br>
+ Diet:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Diet" id="a2"><br><br>
+ Lifespan:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Lifespan" id="a3"><br><br>
+ Species:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Species" id="a4"><br><br>
+ Strength:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Dino Strength" id="a5"><br><br>
+
+ <input type="button" onclick="addnewdino2()" onsubmit="return checkvalues()" value="Add Dino" style="position:absolute;top:260px;left:100px">
+ </form>
+
+
+<form id="updatedinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+
+ <U><b><center> Update Existing Dino Infomation </center></b></U><br><br>
+  Nickname:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="u1"><br><br>
+ Diet:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Diet" id="u2"><br><br>
+ Lifespan:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Lifespan" id="u3"><br><br>
+ Species:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Species" id="u4"><br><br>
+ Strength:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Dino Strength" id="u5"><br><br>
+<input type="button" onclick="updatedino2()" value="Update Dino" style="position:absolute;top:260px;left:100px">
+
+</form>
+
+<form id="deletedinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+
+ <U><b><center> Delete an Existing Dino</center></b></U><br><br>
+
+ Nickname:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="d1"><br><br>
+
+ <!-- <button onclick="deletedino2()" style="position:absolute;top:125px;left:100px" class="button deletedino">Delete Dino </button> -->
+ <input type="button" onclick="deletedino2()" value="Delete Dino" style="position:absolute;top:125px;left:100px">
+</form>
+
+<form id="soundsMenu" style="visibility:hidden;">
+
+ <U><b><center>Check Your Dino Sounds!</center></b></U><br><br>
+  Nickname:
+ <input onclick="cleartextonclick(this)" style="position:absolute;left:100px" type="text" placeholder="Enter Nickname" id="a1"><br><br>
+
+
+ T-Rex:
+ <input type="button" onclick="play()"  value="T-Rex Roar" style="position:absolute;top:260px;left:100px">
+ Trike:
+  <input type="button" onclick="play()"  value="Trike Roar" style="position:absolute;top:260px;left:100px">
+ Raptor:
+  <input type="button" onclick="play()" value="Raptor Roar" style="position:absolute;top:260px;left:100px">
+ Dragon
+ <input type="button" onclick="play()"  value="Dragon Roar" style="position:absolute;top:260px;left:100px">
+ </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="ProjectFunctions.js"></script>
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
