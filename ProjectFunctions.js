@@ -314,7 +314,7 @@ function updatedino2() {
 
 
   function playrexroar(){
-       var audio = document.getElementById("rexroar");
+       var audio = document.getElementById("audio1");
        audio.play();
                  }
   function playraptorroar(){
