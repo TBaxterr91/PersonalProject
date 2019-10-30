@@ -176,19 +176,19 @@ function checkvalues(){
 
 
 function getexistingdinos(){
-console.log("helloo");
-var MenuUpdate= document.getElementById("existingdinoMenu");
-MenuUpdate.style.visibility="visible";
-var MenuAdd= document.getElementById("addnewdinomenu");
-MenuAdd.style.visibility="hidden";
-var MenuUpdate= document.getElementById("updatedinomenu");
-MenuUpdate.style.visibility="hidden";
-var MenuDel= document.getElementById("deletedinomenu");
-MenuDel.style.visibility="hidden";
-const Http = new XMLHttpRequest();
-const url='http://localhost:9100/ShowAll';
-Http.open("GET", url);
-Http.onreadystatechange = function(e){
+ console.log("helloo");
+ var MenuUpdate= document.getElementById("existingdinoMenu");
+ MenuUpdate.style.visibility="visible";
+ var MenuAdd= document.getElementById("addnewdinomenu");
+ MenuAdd.style.visibility="hidden";
+ var MenuUpdate= document.getElementById("updatedinomenu");
+ MenuUpdate.style.visibility="hidden";
+ var MenuDel= document.getElementById("deletedinomenu");
+ MenuDel.style.visibility="hidden";
+ const Http = new XMLHttpRequest();
+ const url='http://'+location.host+':9100/ShowAll';
+ Http.open("GET", url);
+ Http.onreadystatechange = function(e){
 	if (Http.readyState==4){
 	data=JSON.parse(Http.responseText);
 	data.forEach(function(item){
@@ -249,7 +249,7 @@ function addnewdino2() {
 	var dinosaurJSON = JSON.stringify(dinosaur);
 	$.ajax({
 		type : "POST",
-		url : "http://localhost:9100/newDinosaur",
+		url : 'http://'+location.host+':9100/newDinosaur',
 		contentType : "application/json",
 		data : dinosaurJSON,
 		success : function(dinosaur) {
@@ -266,16 +266,11 @@ function addnewdino2() {
 }
 
    
-  function playrexroar(){
-       var audio = document.getElementById("rexroar");
-       audio.play();
-                 }
-
 
 
 	function deleteData(id){
     var Http= new XMLHttpRequest();
-        Http.open("DELETE", 'http://localhost:9100/deleteDino/' + id);
+        Http.open("DELETE", 'http://'+location.host+':9100/deleteDino/' + id);
         Http.setRequestHeader("Content-Type", "application/json");
         Http.onload= function(){
             getexistingdinos();
@@ -302,7 +297,7 @@ function updatedino2() {
 	var dinosaurJSON = JSON.stringify(dinosaur);
 	$.ajax({
 		type : "PUT",
-		url : "http://localhost:9100/updateDinosaur",
+		url : 'http://'+location.host+':9100/updateDinosaur',
 		contentType : "application/json",
 		data : dinosaurJSON,
 		success : function(dinosaur) {
@@ -315,6 +310,14 @@ function updatedino2() {
 	});
 	   playrexroar();
 	   location.reload(true);
-
 }
 
+
+  function playrexroar(){
+       var audio = document.getElementById("rexroar");
+       audio.play();
+                 }
+  function playraptorroar(){
+       var audio = document.getElementById("raptorroar");
+       audio.play();
+                 }

@@ -21,10 +21,11 @@
 }
 </style>
 
-<center><div id="existingdinoMenu" class="container" style="visibility:hidden; background-color:olivedrab">
-  <h2>Existing Dinosaurs</h2>            
-  <table class="table" id="dinoTable">
+<center><span id="existingdinoMenu" class="container" style="visibility:hidden; background-color:olivedrab">
+          
+  <table class="table" id="dinoTable" style="background-color:olivedrab">
     <head>
+    	<thead>Existing Dino Details</thead>
       <tr>
         <th>Nickname</th>
         <th>Diet</th>
@@ -34,24 +35,24 @@
         <th>Delete</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="tablebody">
    
    
 
     </tbody>
   </table>
-</div></center>
+</span></center>
 
 
 <input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" style="position:absolute;top:100px;left:50px">
 <input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:125px;left:50px">
 <input type="button" onclick="updatedino()" value="Update Dino" style="position:absolute;top:150px;left:50px">
-<input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px">
+<!-- <input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px"> -->
 <input type="button" onclick="exitMenu()" value="Exit Menu" style="position:absolute;top:215px;left:50px">
 <input type="button" onclick="soundss()" value="Sound Menu" style="position:absolute;top:240px;left:50px">
 
 
-<audio id="audio" src="rexroar.wav" ></audio>
+
 
 
 
@@ -104,14 +105,20 @@
 
  <U><b><center>Check Your Dino Sounds!</center></b></U><br><br>
  T-Rex:
- <input type="button" onclick="play()"  value="T-Rex Roar" style="position:absolute;top:150px;left:100px"> <br><br>
+ <input type="button" onclick="playrexroar()"  value="T-Rex Roar"> <br><br>
  Trike:
- <input type="button" onclick="play()"  value="Trike Roar" style="position:absolute;top:175px;left:100px"> <br><br>
+ <input type="button" onclick="playtrikeroar()"  value="Trike Roar" > <br><br>
  Raptor:
- <input type="button" onclick="play()" value="Raptor Roar" style="position:absolute;top:200px;left:100px"> <br><br>
- Dragon
- <input type="button" onclick="play()"  value="Dragon Roar" style="position:absolute;top:225px;left:100px"> <br><br>
+ <input type="button" onclick="playraptorroar()" value="Raptor Roar" > <br><br>
+ Dragon:
+ <input type="button" onclick="playdragonroar()"  value="Dragon Roar" > <br><br>
  </form>
+
+<audio id="audio" src="rexroar.wav" ></audio>
+<audio id="audio" src="trikeroar.wav" ></audio>
+<audio id="audio" src="raptorroar.wav" ></audio>
+<audio id="audio" src="dragonroar.wav" ></audio>
+<audio id="audio" src="rexroar.wav" ></audio>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="ProjectFunctions.js"></script>
