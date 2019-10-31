@@ -372,16 +372,41 @@ function playtestroar(){
 function trexpicture(){
 var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="visible";
+var Pteraref= document.getElementById("pterapicture");
+	Pteraref.style.visibility="hidden";
+	var Raptorref= document.getElementById("raptorpicture");
+	Raptorref.style.visibility="hidden";
+	var Dragonref= document.getElementById("dragonpicture");
+	Dragonref.style.visibility="hidden";
                   }
 function pterapicture(){
 var Pteraref= document.getElementById("pterapicture");
 	Pteraref.style.visibility="visible";
+	var Trexref= document.getElementById("trexpicture");
+	Trexref.style.visibility="hidden";
+	var Raptorref= document.getElementById("raptorpicture");
+	Raptorref.style.visibility="hidden";
+	var Dragonref= document.getElementById("dragonpicture");
+	Dragonref.style.visibility="hidden";
 				}
 function raptorpicture(){
 var Raptorref= document.getElementById("raptorpicture");
 	Raptorref.style.visibility="visible";
+	var Trexref= document.getElementById("trexpicture");
+	Trexref.style.visibility="hidden";
+	var Pteraref= document.getElementById("pterapicture");
+	Pteraref.style.visibility="hidden";
+	var Dragonref= document.getElementById("dragonpicture");
+	Dragonref.style.visibility="hidden";
 				}
 function dragonpicture(){
 var Dragonref= document.getElementById("dragonpicture");
 	Dragonref.style.visibility="visible";
+	var Trexref= document.getElementById("trexpicture");
+	Trexref.style.visibility="hidden";
+	var Pteraref= document.getElementById("pterapicture");
+	Pteraref.style.visibility="hidden";
+	var Raptorref= document.getElementById("raptorpicture");
+	Raptorref.style.visibility="hidden";
+	
 				}
