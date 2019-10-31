@@ -369,7 +369,7 @@ function playtestroar(){
        audio.play();
                  }    
 
-// function trexpicture
-// var Refadd= document.getElementById("trexpicture");
-// 	Refadd.style.visibility="visible";
+function trexpicture
+var Trexref= document.getElementById("trexpicture");
+	Trexref.style.visibility="visible";
 
