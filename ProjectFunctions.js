@@ -315,22 +315,22 @@ function updatedino2() {
 
 function playrexroar(){
        var audio = document.getElementById("rexroar");
-       audio.playrexroar();
+       audio.play();
                  }
 
 function playpteraroar (){
        var audio = document.getElementById("pteraroar");
-       audio.playpteraroar();
+       audio.play();
                  }
 
 function playraptorroar(){
        var audio = document.getElementById("raptorroar");
-       audio.playraptorroar();
+       audio.play();
                  }
 
 function playdragonroar(){
        var audio = document.getElementById("dragonroar");
-       audio.playdragonroar();
+       audio.play();
                  }                                 
 
 
