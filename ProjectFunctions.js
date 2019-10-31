@@ -317,14 +317,17 @@ function playrexroar(){
        var audio = document.getElementById("audio1");
        audio.play();
                  }
+
 function playpteraroar(){
        var audio = document.getElementById("audio2");
        audio.play();
                  }
+
 function playraptorroar(){
-       var audio = document.getElementById("raptorroar");
+       var audio = document.getElementById("audio3");
        audio.play();
                  }
+                 
 function playdragonroar(){
        var audio = document.getElementById("audio4");
        audio.play();
