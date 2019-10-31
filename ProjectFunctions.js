@@ -135,70 +135,56 @@ function checkvalues(){
 	var utxt6 = document.getElementById("u6");
 
 	if(atxt1.value==""){
-	alert("Diet field not completed correctly");
+	alert("Nickname field not completed correctly");
 	return false;
 	}
 
 	else if(atxt2.value==""){
-	alert("Lifespan field not completed correctly");
-	return false;
-	}
-
-	else if(atxt3.value==""){
-	alert("Nickname field not completed correctly");
-	return false;
-	}
-
-	else if(atxt4.value==""){
-	alert("Picture Link field not completed correctly");
-	return false;
-	}
-
-	else if(atxt5.value==""){
-	alert("Species field not completed correctly");
-	return false;
-	}
-
-	else if(atxt6.value==""){
-	alert("Strengths field not completed correctly");
-	return false;
-	}
-
-	else if(utxt1.value==""){
 	alert("Diet field not completed correctly");
 	return false;
 	}
 
-	else if(utxt2.value==""){
+	else if(atxt3.value==""){
 	alert("Lifespan field not completed correctly");
 	return false;
 	}
 
-	else if(utxt3.value==""){
-	alert("Nickname field not completed correctly");
-	return false;
-	}
-
-	else if(utxt4.value==""){
-	alert("Picture Link field not completed correctly");
-	return false;
-	}
-
-	else if(utxt5.value==""){
+	else if(atxt4.value==""){
 	alert("Species field not completed correctly");
 	return false;
 	}
 
-	else if(utxt6.value==""){
-	alert("Strengths field not completed correctly");
+	else if(atxt5.value==""){
+	alert("Strength field not completed correctly");
 	return false;
 	}
 
-	else if(dtxt1.value==""){
-	alert("Nickname not entered correctly");
+	else if(utxt1.value==""){
+	alert("Nickname field not completed correctly");
 	return false;
 	}
-	else {alert ("Submission Successful")};
+
+	else if(utxt2.value==""){
+	alert("Diet field not completed correctly");
+	return false;
+	}
+
+	else if(utxt3.value==""){
+	alert("Lifespan field not completed correctly");
+	return false;
+	}
+
+	else if(utxt4.value==""){
+	alert("Species field not completed correctly");
+	return false;
+	}
+
+	else if(utxt5.value==""){
+	alert("Strength field not completed correctly");
+	return false;
+	}
+
+	else {alert ("Submission Successful - Congratulations on the new Dino!")};
 		location.reload(true);
 	}
 
