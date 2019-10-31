@@ -315,20 +315,20 @@ function updatedino2() {
 
 function playrexroar(){
        var audio = document.getElementById("rexroar");
-       audio.play();
+       audio.playrexroar();
                  }
 
 function playpteraroar(){
        var audio = document.getElementById("pteraroar");
-       audio.play();
+       audio.playpteraroar();
                  }
 
 function playraptorroar(){
        var audio = document.getElementById("raptorroar");
-       audio.play();
+       audio.playraptorroar();
                  }
 
 function playdragonroar(){
        var audio = document.getElementById("dragonroar");
-       audio.play();
+       audio.playdragonroar();
                  }                                 
