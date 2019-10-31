@@ -125,8 +125,6 @@ function checkvalues(){
 	var atxt3 = document.getElementById("a3");
 	var atxt4 = document.getElementById("a4");
 	var atxt5 = document.getElementById("a5");
-	var atxt6 = document.getElementById("a6");
-
 
 	if(atxt1.value==""){
 	alert("Nickname field not completed correctly");
@@ -164,8 +162,6 @@ function checkvalues2(){
 	var utxt3 = document.getElementById("u3");
 	var utxt4 = document.getElementById("u4");
 	var utxt5 = document.getElementById("u5");
-	var utxt6 = document.getElementById("u6");
-
 
 	else if(utxt1.value==""){
 	alert("Nickname field not completed correctly");
