@@ -322,7 +322,7 @@ function playpteraroar(){
        audio.play();
                  }
 function playraptorroar(){
-       var audio = document.getElementById("audio3");
+       var audio = document.getElementById("raptorroar");
        audio.play();
                  }
 function playdragonroar(){
