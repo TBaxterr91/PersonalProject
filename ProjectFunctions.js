@@ -279,7 +279,7 @@ function addnewdino2() {
 		dataType : 'json'
 	});
 	   playrexroar();
-	   location.reload(true);
+	   // location.reload(true);
 
 }
 
