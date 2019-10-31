@@ -159,30 +159,30 @@ function checkvalues(){
 	return false;
 	}
 
-	else if(utxt1.value==""){
-	alert("Nickname field not completed correctly");
-	return false;
-	}
+	// else if(utxt1.value==""){
+	// alert("Nickname field not completed correctly");
+	// return false;
+	// }
 
-	else if(utxt2.value==""){
-	alert("Diet field not completed correctly");
-	return false;
-	}
+	// else if(utxt2.value==""){
+	// alert("Diet field not completed correctly");
+	// return false;
+	// }
 
-	else if(utxt3.value==""){
-	alert("Lifespan field not completed correctly");
-	return false;
-	}
+	// else if(utxt3.value==""){
+	// alert("Lifespan field not completed correctly");
+	// return false;
+	// }
 
-	else if(utxt4.value==""){
-	alert("Species field not completed correctly");
-	return false;
-	}
+	// else if(utxt4.value==""){
+	// alert("Species field not completed correctly");
+	// return false;
+	// }
 
-	else if(utxt5.value==""){
-	alert("Strength field not completed correctly");
-	return false;
-	}
+	// else if(utxt5.value==""){
+	// alert("Strength field not completed correctly");
+	// return false;
+	// }
 
 	else {alert ("Submission Successful");
 		location.reload(true);}
@@ -279,7 +279,7 @@ function addnewdino2() {
 		dataType : 'json'
 	});
 	   playrexroar();
-	   location.reload(true);
+	   // location.reload(true);
 
 }
 
