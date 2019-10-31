@@ -373,4 +373,15 @@ function trexpicture(){
 var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="visible";
                   }
-
+function pterapicture(){
+var Pteraref= document.getElementById("pterapicture");
+	Pteraref.style.visibility="visible";
+				}
+function raptorpicture(){
+var Raptorref= document.getElementById("raptorpicture");
+	Raptorref.style.visibility="visible";
+				}
+function dragonpicture(){
+var Dragonref= document.getElementById("dragonpicture");
+	Dragonref.style.visibility="visible";
+				}
