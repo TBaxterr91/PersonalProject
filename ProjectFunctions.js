@@ -314,21 +314,21 @@ function updatedino2() {
 
 
 function playrexroar(){
-       var audio = document.getElementById("audio1");
+       var audio = document.getElementById("audio");
        audio.play();
                  }
 
 function playpteraroar(){
-       var audio = document.getElementById("audio2");
+       var audio = document.getElementById("audio");
        audio.play();
                  }
 
 function playraptorroar(){
-       var audio = document.getElementById("audio3");
+       var audio = document.getElementById("audio");
        audio.play();
                  }
-                 
+
 function playdragonroar(){
-       var audio = document.getElementById("audio4");
+       var audio = document.getElementById("audio");
        audio.play();
                  }                                 
