@@ -38,16 +38,15 @@
   </table>
 </span></center>
 
-<!-- <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
 
-<img src="dinobike.gif" alt="Computer Man" style="width:480px;height:480px;"> -->
 
 <input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" id="mainmenubutton" style="position:absolute;top:100px;left:50px">
 <input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:125px;left:50px">
 <input type="button" onclick="updatedino()" value="Update Dino" style="position:absolute;top:150px;left:50px">
 <!-- <input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px"> -->
 <input type="button" onclick="exitMenu()" value="Exit Menu" style="position:absolute;top:215px;left:50px">
-<input type="button" onclick="soundss()" value="Sound Menu" style="position:absolute;top:240px;left:50px">
+<input type="button" onclick="soundss()" value="Dino Sounds" style="position:absolute;top:240px;left:50px">
+<input type="button" onclick="imagemenu()" value="Dino Images" style="position:absolute;top:265px;left:50px">
 
 
 
@@ -120,11 +119,33 @@
  <input type="button" onclick="playtestroar()"  value="Test Roar" > <br><br>
  </form>
 
-<audio id="rexroar" src="rexroar.wav" ></audio>
-<audio id="pteraroar" src="pteraroar.wav" ></audio>
-<audio id="raptorroar" src="raptorroar.wav" ></audio>
-<audio id="dragonroar" src="dragonroar.wav" ></audio>
-<audio id="testroar" src="dragonroar.wav" ></audio>
+ <audio id="rexroar" src="rexroar.wav" ></audio>
+ <audio id="pteraroar" src="pteraroar.wav" ></audio>
+ <audio id="raptorroar" src="raptorroar.wav" ></audio>
+ <audio id="dragonroar" src="dragonroar.wav" ></audio>
+ 
+
+
+ <audio id="testroar" src="dragonroar.wav" ></audio>
+
+<form id="imagemenu" style="visibility:hidden;">
+
+ <U><b><center>See Pictures of Your Dinosaurs!!</center></b></U><br><br>
+ T-Rex:
+ <input type="button" onclick="trexpicture()"  value="T-Rex"> <br><br>
+ Pteradactyl:
+ <input type="button" onclick="pterapicture()"  value="Pteradactyl" > <br><br>
+ Raptor:
+ <input type="button" onclick="raptorpicture()" value="Raptor" > <br><br>
+ Dragon:
+ <input type="button" onclick="dragonpicture()"  value="Dragon" > <br><br>
+ Test:
+ <input type="button" onclick="testpicture()"  value="Test" > <br><br>
+ </form>
+
+<!-- <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+<img src="dinobike.gif" alt="Computer Man" style="width:480px;height:480px;"> -->
 
 </body>
 

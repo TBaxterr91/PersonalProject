@@ -11,6 +11,8 @@ function addnewdino(){
     MenuUpdate.style.visibility="hidden";
      var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
+    Refsound.style.visibility="hidden";
 	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -24,6 +26,8 @@ function updatedino(){
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
      var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
     Refsound.style.visibility="hidden";
 	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
@@ -39,6 +43,8 @@ function deletedino(){
     MenuUpdate.style.visibility="hidden";
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
+    Refsound.style.visibility="hidden";
 	Refdelete.style="width:275px;height:100px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -53,7 +59,26 @@ function soundss(){
     MenuUpdate.style.visibility="hidden";
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="visible";
+    var Refimage= document.getElementById("imagemenu");
+    Refsound.style.visibility="hidden";
 	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+}
+
+function addnewdino(){
+	var Refadd= document.getElementById("addnewdinomenu");
+	Refadd.style.visibility="hidden";
+	var Refupdate= document.getElementById("updatedinomenu");
+	Refupdate.style.visibility="hidden";
+	var Refdelete= document.getElementById("deletedinomenu");
+	Refdelete.style.visibility="hidden";
+	var MenuUpdate= document.getElementById("existingdinoMenu");
+    MenuUpdate.style.visibility="hidden";
+    var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
+    Refsound.style.visibility="visible";
+
+	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
 
@@ -66,7 +91,9 @@ function closeMenu(){
     MenuDel.style.visibility="hidden";
     var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
-     var Refsound= document.getElementById("soundsMenu");
+    var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
     Refsound.style.visibility="hidden";
 }
 
@@ -80,6 +107,8 @@ function exitMenu(){
     var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
      var Refsound= document.getElementById("soundsMenu");
+    Refsound.style.visibility="hidden";
+    var Refimage= document.getElementById("imagemenu");
     Refsound.style.visibility="hidden";
     location.reload(true);
 }
