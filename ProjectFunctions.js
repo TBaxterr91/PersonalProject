@@ -163,7 +163,8 @@ function checkvalues2(){
 	var utxt4 = document.getElementById("u4");
 	var utxt5 = document.getElementById("u5");
 
-	else if(utxt1.value==""){
+	
+	if(utxt1.value==""){
 	alert("Nickname field not completed correctly");
 	return false;
 	}
