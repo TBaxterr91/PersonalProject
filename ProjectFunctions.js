@@ -184,8 +184,8 @@ function checkvalues(){
 	return false;
 	}
 
-	else {alert ("Submission Successful");}
-		// location.reload(true);
+	else {alert ("Submission Successful");
+		location.reload(true);}
 	}
 
 
@@ -279,7 +279,7 @@ function addnewdino2() {
 		dataType : 'json'
 	});
 	   playrexroar();
-	   // location.reload(true);
+	   location.reload(true);
 
 }
 
