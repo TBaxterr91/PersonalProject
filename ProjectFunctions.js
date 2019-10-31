@@ -332,7 +332,10 @@ function playdragonroar(){
        var audio = document.getElementById("dragonroar");
        audio.play();
                  }                                 
-
+function playtestroar(){
+       var audio = document.getElementById("testroar");
+       audio.play();
+                 }    
 
 
 
