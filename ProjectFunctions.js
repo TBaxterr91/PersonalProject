@@ -184,8 +184,8 @@ function checkvalues(){
 	return false;
 	}
 
-	else {alert ("Submission Successful")};
-		location.reload(true);
+	else {alert ("Submission Successful");
+		location.reload(true);}
 	}
 
 
