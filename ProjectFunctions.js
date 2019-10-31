@@ -9,7 +9,7 @@ function addnewdino(){
 	Refdelete.style.visibility="hidden";
 	var MenuUpdate= document.getElementById("existingdinoMenu");
     MenuUpdate.style.visibility="hidden";
-     var Refsound= document.getElementById("soundsMenu");
+    var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
     Refsound.style.visibility="hidden";
@@ -214,6 +214,10 @@ function getexistingdinos(){
  MenuUpdate.style.visibility="hidden";
  var MenuDel= document.getElementById("deletedinomenu");
  MenuDel.style.visibility="hidden";
+ var Refsound= document.getElementById("soundsMenu");
+ Refsound.style.visibility="hidden";
+ var Refimage= document.getElementById("imagemenu");
+ Refsound.style.visibility="hidden";
  const Http = new XMLHttpRequest();
  const url='http://'+location.host+':9100/ShowAll';
  Http.open("GET", url);
