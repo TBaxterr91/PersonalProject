@@ -184,7 +184,7 @@ function checkvalues(){
 	return false;
 	}
 
-	else {alert ("Submission Successful - Congratulations on the new Dino!")};
+	else {alert ("Submission Successful")};
 		location.reload(true);
 	}
 
