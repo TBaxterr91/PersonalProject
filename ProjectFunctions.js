@@ -319,8 +319,9 @@ function playrexroar(){
                  }
 
 function playpteraroar(){
-       var audio = document.getElementById("pteraroar");
-       audio.playpteraroar();
+	console.log("Hey");
+       // var audio = document.getElementById("pteraroar");
+       // audio.playpteraroar();
                  }
 
 function playraptorroar(){
@@ -332,3 +333,7 @@ function playdragonroar(){
        var audio = document.getElementById("dragonroar");
        audio.playdragonroar();
                  }                                 
+
+
+
+
