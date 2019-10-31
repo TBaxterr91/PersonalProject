@@ -64,7 +64,7 @@ function soundss(){
 	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
-function imagemenu(){
+function imagedino(){
 	var Refadd= document.getElementById("addnewdinomenu");
 	Refadd.style.visibility="hidden";
 	var Refupdate= document.getElementById("updatedinomenu");
