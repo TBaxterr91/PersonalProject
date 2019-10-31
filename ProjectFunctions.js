@@ -268,13 +268,13 @@ function addnewdino2() {
    
 
 
-	function deleteData(id){
+function deleteData(id){
     var Http= new XMLHttpRequest();
-        Http.open("DELETE", 'http://'+location.host+':9100/deleteDino/' + id);
-        Http.setRequestHeader("Content-Type", "application/json");
-        Http.onload= function(){
-            getexistingdinos();
-            location.reload(true);
+    Http.open("DELETE", 'http://'+location.host+':9100/deleteDino/' + id);
+    Http.setRequestHeader("Content-Type", "application/json");
+    Http.onload= function(){
+    getexistingdinos();
+    location.reload(true);
         }
         
         Http.send();
@@ -313,11 +313,19 @@ function updatedino2() {
 }
 
 
-  function playrexroar(){
+function playrexroar(){
        var audio = document.getElementById("audio1");
        audio.play();
                  }
-  function playraptorroar(){
-       var audio = document.getElementById("raptorroar");
+function playpteraroar(){
+       var audio = document.getElementById("audio2");
        audio.play();
                  }
+function playraptorroar(){
+       var audio = document.getElementById("audio3");
+       audio.play();
+                 }
+function playdragonroar(){
+       var audio = document.getElementById("audio4");
+       audio.play();
+                 }                                 
