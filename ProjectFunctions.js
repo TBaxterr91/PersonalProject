@@ -76,9 +76,8 @@ function imagedino(){
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
-    Refsound.style.visibility="visible";
-
-	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+    Refimage.style.visibility="visible";
+	Refimage.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
 
