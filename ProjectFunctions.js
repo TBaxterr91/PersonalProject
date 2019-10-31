@@ -60,7 +60,7 @@ function soundss(){
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="visible";
     var Refimage= document.getElementById("imagemenu");
-    Refsound.style.visibility="hidden";
+    Refimage.style.visibility="hidden";
 	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
