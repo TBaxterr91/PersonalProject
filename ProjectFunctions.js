@@ -369,5 +369,7 @@ function playtestroar(){
        audio.play();
                  }    
 
-
+function trexpicture
+var Refadd= document.getElementById("trexpicture");
+	Refadd.style.visibility="visible";
 
