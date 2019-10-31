@@ -64,7 +64,7 @@ function soundss(){
 	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
-function addnewdino(){
+function imagedino(){
 	var Refadd= document.getElementById("addnewdinomenu");
 	Refadd.style.visibility="hidden";
 	var Refupdate= document.getElementById("updatedinomenu");
@@ -346,29 +346,29 @@ function updatedino2() {
 }
 
 
+
 function playrexroar(){
        var audio = document.getElementById("rexroar");
        audio.play();
                  }
-
-function playpteraroar (){
+ function playpteraroar (){
        var audio = document.getElementById("pteraroar");
        audio.play();
                  }
-
-function playraptorroar(){
+ function playraptorroar(){
        var audio = document.getElementById("raptorroar");
        audio.play();
                  }
-
-function playdragonroar(){
+ function playdragonroar(){
        var audio = document.getElementById("dragonroar");
        audio.play();
                  }                                 
-function playtestroar(){
+ function playtestroar(){
        var audio = document.getElementById("testroar");
        audio.play();
                  }    
 
 
-
+function trexpicture(){
+	var Refadd= document.getElementById("trexpicture");
+	Refadd.style.visibility="visible";

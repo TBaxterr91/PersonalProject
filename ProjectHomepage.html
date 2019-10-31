@@ -44,10 +44,9 @@
 <input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" id="mainmenubutton" style="position:absolute;top:100px;left:50px">
 <input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:125px;left:50px">
 <input type="button" onclick="updatedino()" value="Update Dino" style="position:absolute;top:150px;left:50px">
-<!-- <input type="button" onclick="deletedino()" value="Delete Dino" style="position:absolute;top:175px;left:50px"> -->
 <input type="button" onclick="exitMenu()" value="Exit Menu" style="position:absolute;top:215px;left:50px">
 <input type="button" onclick="soundss()" value="Dino Sounds" style="position:absolute;top:240px;left:50px">
-<input type="button" onclick="imagemenu()" value="Dino Images" style="position:absolute;top:265px;left:50px">
+<input type="button" onclick="imagedino()" value="Dino Images" style="position:absolute;top:265px;left:50px">
 
 
 
@@ -124,9 +123,6 @@
  <audio id="pteraroar" src="pteraroar.wav" ></audio>
  <audio id="raptorroar" src="raptorroar.wav" ></audio>
  <audio id="dragonroar" src="dragonroar.wav" ></audio>
- 
-
-
  <audio id="testroar" src="dragonroar.wav" ></audio>
 
 <form id="imagemenu" style="visibility:hidden;">
@@ -145,7 +141,7 @@
  </form>
 
 
-<img src="dinobike.gif" alt="DinoBike Gif" style="width:200px;height:200px;visibility:visible; position:absolute;top:200px;left:400px">
+<img id="trexpicture" src="dinobike.gif" alt="DinoBike Gif" style="width:200px;height:200px;visibility:hidden; position:absolute;top:200px;left:400px">
 
 </body>
 
