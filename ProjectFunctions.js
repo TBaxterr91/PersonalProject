@@ -12,7 +12,7 @@ function addnewdino(){
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
-    Refsound.style.visibility="hidden";
+    Refimage.style.visibility="hidden";
 	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -28,7 +28,7 @@ function updatedino(){
      var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
-    Refsound.style.visibility="hidden";
+    Refimage.style.visibility="hidden";
 	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
@@ -44,7 +44,7 @@ function deletedino(){
     var Refsound= document.getElementById("soundsMenu");
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
-    Refsound.style.visibility="hidden";
+    Refimage.style.visibility="hidden";
 	Refdelete.style="width:275px;height:100px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
 }
 
