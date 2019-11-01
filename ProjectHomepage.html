@@ -9,6 +9,8 @@
 
 <html>
 
+<link rel="stylesheet" href="CSSStuff.css">
+
 <style>
     body{
     background-image: url("dinobike.gif");
@@ -17,7 +19,7 @@
 }
 </style>
 
-<center><span id="existingdinoMenu" class="container" style="position:absolute;top:125px;left:400px;visibility:hidden; background-color:olivedrab">
+<center><span id="existingdinoMenu" class="container" style="position:absolute;top:125px;left:400px;visibility:hidden; background-color:olivedrab" class="Filter">
           
   <table class="table" id="dinoTable" style="background-color:olivedrab">
     <head>
@@ -42,7 +44,7 @@
 
 
 
-<input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" id="mainmenubutton" style="border-radius: 25px"position:absolute;top:125px;left:50px">
+<input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" id="mainmenubutton" style="border-radius: 25px;position:absolute;top:125px;left:50px" class="Filter">
 <input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:150px;left:50px;border-radius: 25px;">
 <input type="button" onclick="updatedino()" value="Update Dino" style="border-radius: 25px;position:absolute;top:175px;left:50px">
 <input type="button" onclick="imagedino()" value="Dino Images" style="border-radius: 25px;position:absolute;top:210px;left:50px">
@@ -56,7 +58,7 @@
 
 
 
-<form id="addnewdinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+<form id="addnewdinomenu" style="visibility:hidden;" class="Filter" onsubmit="return checkvalues()">
 
  <U><b><center>Add New Dino Infomation</center></b></U><br><br>
   Nickname:
@@ -74,7 +76,7 @@
  </form>
 
 
-<form id="updatedinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+<form id="updatedinomenu" style="visibility:hidden;" class="Filter" onsubmit="return checkvalues()">
 
  <U><b><center> Update Existing Dino Infomation </center></b></U><br><br>
   Nickname:
@@ -91,7 +93,7 @@
 
  </form>
 
-<form id="deletedinomenu" style="visibility:hidden;" onsubmit="return checkvalues()">
+<form id="deletedinomenu" style="visibility:hidden;" class="Filter" onsubmit="return checkvalues()">
 
  <U><b><center> Delete an Existing Dino</center></b></U><br><br>
 
@@ -107,7 +109,7 @@
 <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
-<form id="soundsMenu" style="visibility:hidden;">
+<form id="soundsMenu" style="visibility:hidden;" class="Filter">
 
  <U><b><center>Check Your Dino Sounds!</center></b></U><br><br>
  T-Rex:
@@ -128,7 +130,7 @@
  <audio id="dragonroar" src="dragonroar.wav" ></audio>
  <audio id="testroar" src="dragonroar.wav" ></audio>
 
-<form id="imagemenu" style="visibility:hidden;">
+<form id="imagemenu" style="visibility:hidden;" class="Filter">
 
  <U><b><center>See Pictures of Your Dinosaurs!!</center></b></U><br><br>
  T-Rex:
@@ -148,6 +150,7 @@
 <img id="dragonpicture" src="dragonpicture.jpg" alt="Dragon Picture" style="width:250px;height:250px;visibility:hidden; position:absolute;top:135px;left:650px">
 
 </body>
+
 
 
 </html>
