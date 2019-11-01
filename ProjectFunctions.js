@@ -29,7 +29,7 @@ function updatedino(){
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
     Refimage.style.visibility="hidden";
-	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+	Refupdate.style="width:275px;height:260px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
 }
 
 function deletedino(){
@@ -61,7 +61,7 @@ function soundss(){
     Refsound.style.visibility="visible";
     var Refimage= document.getElementById("imagemenu");
     Refimage.style.visibility="hidden";
-	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+	Refsound.style="width:275px;height:260px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
 }
 
 function imagedino(){
@@ -77,7 +77,7 @@ function imagedino(){
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
     Refimage.style.visibility="visible";
-	Refimage.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+	Refimage.style="width:275px;height:260px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
 }
 
 
