@@ -45,11 +45,11 @@
 
 
 <input type="button" onclick="addnewdino();playrexroar()" value="Add New Dino" id="mainmenubutton" style="border-radius: 25px;position:absolute;top:125px;left:50px" class="Filter">
-<input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:150px;left:50px;border-radius: 25px;">
-<input type="button" onclick="updatedino()" value="Update Dino" style="border-radius: 25px;position:absolute;top:175px;left:50px">
-<input type="button" onclick="imagedino()" value="Dino Images" style="border-radius: 25px;position:absolute;top:210px;left:50px">
-<input type="button" onclick="soundss()" value="Dino Sounds" style="border-radius: 25px;position:absolute;top:235px;left:50px">
-<input type="button" onclick="exitMenu()" value="Exit Menu" style="border-radius: 25px;position:absolute;top:270px;left:50px">
+<input type="button" onclick="getexistingdinos()" value="Search Existing Dinos" style="position:absolute;top:150px;left:50px;border-radius: 25px;" class="Filter">
+<input type="button" onclick="updatedino()" value="Update Dino" style="border-radius: 25px;position:absolute;top:175px;left:50px" class="Filter">
+<input type="button" onclick="imagedino()" value="Dino Images" style="border-radius: 25px;position:absolute;top:210px;left:50px" class="Filter">
+<input type="button" onclick="soundss()" value="Dino Sounds" style="border-radius: 25px;position:absolute;top:235px;left:50px" class="Filter">
+<input type="button" onclick="exitMenu()" value="Exit Menu" style="border-radius: 25px;position:absolute;top:270px;left:50px" class="Filter">
 
 
 
@@ -109,19 +109,19 @@
 <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
-<form id="soundsMenu" style="visibility:hidden;" class="Filter">
+<form id="soundsMenu" style="visibility:hidden;">
 
  <U><b><center>Check Your Dino Sounds!</center></b></U><br><br>
  T-Rex:
- <input type="button" onclick="playrexroar()"  value="T-Rex Roar" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="playrexroar()"  class="Filter" value="T-Rex Roar" style="border-radius: 25px"> <br><br>
  Ptera:
- <input type="button" onclick="playpteraroar()"  value="Ptera Scream" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="playpteraroar()"  class="Filter" value="Ptera Scream" style="border-radius: 25px"> <br><br>
  Raptor:
- <input type="button" onclick="playraptorroar()" value="Raptor Roar" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="playraptorroar()" class="Filter" value="Raptor Roar" style="border-radius: 25px"> <br><br>
  Dragon:
- <input type="button" onclick="playdragonroar()"  value="Dragon Roar" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="playdragonroar()"  class="Filter" value="Dragon Roar" style="border-radius: 25px"> <br><br>
  Test:
- <input type="button" onclick="playtestroar()"  value="Test Roar" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="playtestroar()"  class="Filter" value="Test Roar" style="border-radius: 25px"> <br><br>
  </form>
 
  <audio id="rexroar" src="rexroar.wav" ></audio>
@@ -130,17 +130,17 @@
  <audio id="dragonroar" src="dragonroar.wav" ></audio>
  <audio id="testroar" src="dragonroar.wav" ></audio>
 
-<form id="imagemenu" style="visibility:hidden;" class="Filter">
+<form id="imagemenu" style="visibility:hidden;">
 
  <U><b><center>See Pictures of Your Dinosaurs!!</center></b></U><br><br>
  T-Rex:
- <input type="button" onclick="trexpicture()"  value="T-Rex" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="trexpicture()"  class="Filter" value="T-Rex" style="border-radius: 25px"> <br><br>
  Pteradactyl:
- <input type="button" onclick="pterapicture()"  value="Pteradactyl" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="pterapicture()"  class="Filter" value="Pteradactyl" style="border-radius: 25px"> <br><br>
  Raptor:
- <input type="button" onclick="raptorpicture()" value="Raptor" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="raptorpicture()" class="Filter" value="Raptor" style="border-radius: 25px"> <br><br>
  Dragon:
- <input type="button" onclick="dragonpicture()"  value="Dragon" style="border-radius: 25px"> <br><br>
+ <input type="button" onclick="dragonpicture()"  class="Filter" value="Dragon" style="border-radius: 25px"> <br><br>
  </form>
 
 
