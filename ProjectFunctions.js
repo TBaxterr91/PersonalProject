@@ -13,7 +13,7 @@ function addnewdino(){
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
     Refimage.style.visibility="hidden";
-	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
+	Refadd.style="width:275px;height:260px;border: 1px solid black;border-radius: 25px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
 }
 
 function updatedino(){
