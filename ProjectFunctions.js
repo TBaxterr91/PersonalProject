@@ -13,7 +13,7 @@ function addnewdino(){
     Refsound.style.visibility="hidden";
     var Refimage= document.getElementById("imagemenu");
     Refimage.style.visibility="hidden";
-	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px";
+	Refadd.style="width:275px;height:260px;position: fixed;background-color:olivedrab;position:absolute;top:125px;left:400px";
 }
 
 function updatedino(){
@@ -114,9 +114,9 @@ function exitMenu(){
 
 function cleartextonclick(id){
 
-id.value = "";
+ id.value = "";
 	
-}
+ }
 
 
 function checkvalues(){
@@ -246,10 +246,10 @@ function getexistingdinos(){
 		dinoTable.appendChild(dinoRow);
 
 	});
-}
-}
-Http.send();
-}
+ }
+ }
+ Http.send();
+ }
 
 
 
@@ -354,23 +354,25 @@ function playdragonroar(){
        var audio = document.getElementById("dragonroar");
        audio.play();
                  }                                 
+
 function playtestroar(){
        var audio = document.getElementById("testroar");
        audio.play();
                  }    
 
 function trexpicture(){
-var Trexref= document.getElementById("trexpicture");
+ var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="visible";
-var Pteraref= document.getElementById("pterapicture");
+ var Pteraref= document.getElementById("pterapicture");
 	Pteraref.style.visibility="hidden";
 	var Raptorref= document.getElementById("raptorpicture");
 	Raptorref.style.visibility="hidden";
 	var Dragonref= document.getElementById("dragonpicture");
 	Dragonref.style.visibility="hidden";
                   }
+
 function pterapicture(){
-var Pteraref= document.getElementById("pterapicture");
+ var Pteraref= document.getElementById("pterapicture");
 	Pteraref.style.visibility="visible";
 	var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="hidden";
@@ -379,8 +381,9 @@ var Pteraref= document.getElementById("pterapicture");
 	var Dragonref= document.getElementById("dragonpicture");
 	Dragonref.style.visibility="hidden";
 				}
+
 function raptorpicture(){
-var Raptorref= document.getElementById("raptorpicture");
+ var Raptorref= document.getElementById("raptorpicture");
 	Raptorref.style.visibility="visible";
 	var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="hidden";
@@ -389,9 +392,9 @@ var Raptorref= document.getElementById("raptorpicture");
 	var Dragonref= document.getElementById("dragonpicture");
 	Dragonref.style.visibility="hidden";
 				}
+
 function dragonpicture(){
-var Dragonref= document.getElementById("dragonpicture");
-	Dragonref.style.visibility="visible";
+ 	Dragonref.style.visibility="visible";
 	var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="hidden";
 	var Pteraref= document.getElementById("pterapicture");
