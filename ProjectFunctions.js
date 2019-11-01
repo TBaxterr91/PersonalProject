@@ -394,6 +394,7 @@ function raptorpicture(){
 				}
 
 function dragonpicture(){
+var Dragonref= document.getElementById("dragonpicture");
  	Dragonref.style.visibility="visible";
 	var Trexref= document.getElementById("trexpicture");
 	Trexref.style.visibility="hidden";
