@@ -206,7 +206,7 @@ function getexistingdinos(){
  var Refsound= document.getElementById("soundsMenu");
  Refsound.style.visibility="hidden";
  var Refimage= document.getElementById("imagemenu");
- Refsound.style.visibility="hidden";
+ Refimage.style.visibility="hidden";
  const Http = new XMLHttpRequest();
  const url='http://'+location.host+':9100/ShowAll';
  Http.open("GET", url);
